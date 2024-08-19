@@ -192,10 +192,10 @@ class Square extends Rectangle {
 <?php
 
 abstract class Shape {
-    protected string $color = 'red';
-    protected bool $filled = true;
+    protected string $color;
+    protected bool $filled;
 
-    public function __construct($color = 'red', $filled = true) {
+    public function __construct($color, $filled) {
         $this->color = $color;
         $this->filled = $filled;
     }
