@@ -1,5 +1,5 @@
 <?php
-
+// problem 4.1
 class person {
     protected string $name;
     protected string $address;
@@ -86,7 +86,7 @@ class staff extends person {
 ?>
 
 <?php
-
+// problem 4.5
 class Shape {
     protected string $color;
 
@@ -190,7 +190,7 @@ class Square extends Rectangle {
 ?>
 
 <?php
-
+// problem 6.1
 abstract class Shape {
     protected string $color;
     protected bool $filled;
