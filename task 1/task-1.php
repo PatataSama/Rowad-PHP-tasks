@@ -225,9 +225,9 @@ abstract class Shape {
 }
 
 class Circle extends Shape {
-    protected float $radius = 1.0;
+    protected float $radius;
 
-    public function __construct($radius = 1.0, $color = 'red', $filled = true) {
+    public function __construct($radius, $color, $filled) {
         parent::__construct($color, $filled);
         $this->radius = $radius;
     }
@@ -254,10 +254,10 @@ class Circle extends Shape {
 }
 
 class Rectangle extends Shape {
-    protected float $width = 1.0;
-    protected float $height = 1.0;
+    protected float $width;
+    protected float $height;
     
-    public function __construct($width = 1.0, $height = 1.0, $color ='red', $filled = true) {
+    public function __construct($width, $height, $color, $filled ) {
         parent::__construct($color, $filled);
         $this->width = $width;
         $this->height = $height;
@@ -293,9 +293,9 @@ class Rectangle extends Shape {
 }
 
 class Square extends Rectangle {
-    protected float $side = 1.0;
+    protected float $side;
     
-    public function __construct($side = 1.0, $color ='red', $filled = true) {
+    public function __construct($side, $color, $filled) {
         parent::__construct($side, $side, $color, $filled);
     }
     
